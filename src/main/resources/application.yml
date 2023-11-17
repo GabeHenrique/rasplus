@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rasplus
+    username: postgres
+    password: postgres
+    hikari:
+      schema: rasmoo
+  flyway:
+    enabled: true
+server:
+  port: 8082
+  servlet:
+    context-path: /ws-rasplus
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+    doc-expansion: none
